@@ -15,10 +15,10 @@ class Triangle
     elsif self.s1 = self.s2 = self.s3
       @type =
 
-    elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s1 == self.s3
+    elsif self.s1 = self.s2 || self.s2  self.s3 || self.s1 = self.s3
       return :isosceles
 
-    elsif self.s2 == self.s3 || self.s1 == self.s2 || self.s1 == self.s3
+    elsif self.s2 = self.s3 || self.s1 = self.s2 || self.s1 = self.s3
 
     end
   end
