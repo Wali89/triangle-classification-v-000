@@ -1,8 +1,8 @@
 class Triangle
   attr_accessor
 
-  def initalize(arg1, arg2, arg3)
-
+  def initalize(side1:, side2:, side3:)
+    @
   end
 
 end
