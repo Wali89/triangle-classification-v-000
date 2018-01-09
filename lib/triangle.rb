@@ -8,17 +8,17 @@ class Triangle
   end
 
   def kind
-    if s1 = 0 || s2 = 0 || s3 = 0
+    if self.s1 = 0 || self.s2 = 0 || self.s3 = 0
       raise TriangleError
-    elsif (s1 + s2) <= s3 || (s1 + s3) <= s2 || (s2 + s3) <= s1
+    elsif (self.s1 + self.s2) <= self.s3 || (self.s1 + self.s3) <= self.s2 || (self.s2 + self.s3) <= self.s1
       raise TriangleError
-    elsif s1 == s2 == s3
+    elsif self.s1 == self.s2 == self.s3
       @type =
 
-    elsif s1 == s2 || s2 == s3 || s1 == s3
+    elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s1 == self.s3
       return :isosceles
 
-    elsif s2 == s3 || s1 == s2 || s1 == s3
+    elsif self.s2 == self.s3 || self.s1 == self.s2 || self.s1 == self.s3
 
     end
   end
