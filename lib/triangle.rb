@@ -12,7 +12,7 @@ class Triangle
       raise TriangleError
     elsif (self.s1 + self.s2) <= self.s3 || (self.s1 + self.s3) <= self.s2 || (self.s2 + self.s3) <= self.s1
       raise TriangleError
-    elsif self.s1 == self.s2 == self.s3
+    elsif self.s1 = self.s2 = self.s3
       @type =
 
     elsif self.s1 == self.s2 || self.s2 == self.s3 || self.s1 == self.s3
