@@ -13,9 +13,13 @@ class Triangle
         raise TriangleError
       rescue TriangleError => error
         puts error.message
-       puts error.message
+      end
     elsif (self.s1 + self.s2) <= self.s3 || (self.s1 + self.s3) <= self.s2 || (self.s2 + self.s3) <= self.s1
-      raise TriangleError
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
     elsif self.s1 = self.s2 = self.s3
       @type =
 
